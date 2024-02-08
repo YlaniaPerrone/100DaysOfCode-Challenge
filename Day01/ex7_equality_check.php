@@ -1,23 +1,34 @@
 <?php
 //Random number generator with equality check
+
+$data = [];
+$numberInterantion = 3;
+
 function getRandomNbrs()
 {
     return rand(1, 10);
 }
 
-function checkNbrIsEgal($nbr)
+
+function insertValueIfNotInArray(int $value, array $data): array
 {
-    $array = [];
-    while (count($array) < $nbr) {
-        $nbrRand = getRandomNbrs();
-        if (!in_array($nbrRand, $array)) {
-            $array[] = $nbrRand;
-        }
+    if (!in_array($value, $data)) {
+        $data[] = $value;
     }
+    return $data;
+}
+
+
+function generatArrayRandomNbr(array $array, int $value): array
+{
+    while (count($array) < $value) {
+        $nbrRand = getRandomNbrs();
+        $array = insertValueIfNotInArray($nbrRand, $array);
+    }
+
     return $array;
 }
 
-$resul = checkNbrIsEgal(3);
-print_r($resul);
 
-
+$result = generatArrayRandomNbr($data, $numberInterantion);
+print_r($result);
