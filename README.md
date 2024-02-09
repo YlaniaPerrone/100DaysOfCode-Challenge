@@ -14,6 +14,13 @@
 
   - [x] improvement ex Generate 3 unique numbers
   - [x] algorithmic theory
- 
+
+### Day03
+  - [x] Addition game with random numbers
+  - [ ] Word input loop with special tracking for words starting with 'L'
+  - [ ] Count the number of vowels in a word
+  - [ ] Reverse a word
+  - [ ] Sum the elements of an array of lists
+  - [ ] Generation of a sequence of numbers according to the Fibonacci 
 
 
