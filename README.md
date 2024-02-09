@@ -17,7 +17,7 @@
 
 ### Day03
   - [x] Addition game with random numbers
-  - [ ] Word input loop with special tracking for words starting with 'L'
+  - [x] Change the First Letter of the Word Starting with 'L'
   - [ ] Count the number of vowels in a word
   - [ ] Reverse a word
   - [ ] Sum the elements of an array of lists
