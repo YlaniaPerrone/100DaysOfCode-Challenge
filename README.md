@@ -13,7 +13,7 @@
 ### Day02
 
   - [x] improvement ex Generate 3 unique numbers
-    - [x] algorithmic theory
+  - [x] algorithmic theory
  
 
 
