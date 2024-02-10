@@ -17,10 +17,11 @@
 
 ### Day03
   - [x] Addition game with random numbers
-  - [x] Change the First Letter of the Word Starting with 'L'
-  - [ ] Count the number of vowels in a word
-  - [ ] Reverse a word
-  - [ ] Sum the elements of an array of lists
-  - [ ] Generation of a sequence of numbers according to the Fibonacci 
-
+  - [x] Change the First Letter of the Word 
+  - 
+### Day04
+  - [x] Count the number of vowels in a word
+  - [x] Reverse a word
+  - [x] Sum the elements of an array of lists
+  - 
 
