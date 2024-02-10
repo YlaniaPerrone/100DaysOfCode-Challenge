@@ -1,28 +1,17 @@
 <?php
 
 $arrayData = [];
-$wordEnter = readline();
+$wordEnter = readline('Enter a word : ');
 $letterToCheck = 'f';
 $letterChang = 'l';
-$nbrWord = readline();
 
-function saveWordInArray(string $word, array $array) : array
+$newWord = str_replace($letterToCheck, $letterChang, $wordEnter);
+
+function showAnswer(string $word, $convertWorld) :string
 {
-        $array[] = $word;
-        return $array;
+    return $word ===$convertWorld ? "word init :  $word"
+        : "Word $word been changed to : $convertWorld";
 }
 
-function changeFirstLetter(string $letter, string $newLetter, array $array) : array
-{
-    for ($i = 0; $i < count($array); $i++) {
-       if (substr($array[$i], 0, 1) === $letter){
-           $array[$i] = $newLetter . substr($array[$i], 1);
-       }
-    }
-    return $array;
-}
-
-$data = saveWordInArray($wordEnter, $arrayData, $nbrWord);
-
-$result = changeFirstLetter($letterToCheck, $letterChang, $data);
+$result = showAnswer($wordEnter, $newWord);
 print_r($result);
