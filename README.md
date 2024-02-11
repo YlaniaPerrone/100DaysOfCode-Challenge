@@ -16,12 +16,26 @@
   - [x] algorithmic theory
 
 ### Day03
-  - [x] Addition game with random numbers
+  - [x] Addition random numbers
   - [x] Change the First Letter of the Word 
-  - 
+
+
 ### Day04
   - [x] Count the number of vowels in a word
   - [x] Reverse a word
   - [x] Sum the elements of an array of lists
-  - 
 
+### Day05 : Recursive Algorithm
+  - [x] Theory
+  - [x] Calculating factorial
+  - [x] Generation of a sequence of numbers according to the Fibonacci
+  - [x] Calculating the sum of an array
+  - [x] Calculating the sum of the digits of a number
+  - [] Conversion of binary number to decimal
+  - [] Palindrome check 
+  - [] Calcul du nombre de diviseurs
+
+
+
+
+Calculating the sum of numbers of a number
