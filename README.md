@@ -1,8 +1,9 @@
 # Participation [#100DaysOfCode Challenge](https://www.100daysofcode.com/)
 
 ### Exercices basics :
-### Day01 
+---------------------
 
+### Day01 
   - [x] Display squares of numbers from 1 to 10
   - [x] Display multiples of 5 up to 50
   - [x] Display cubes of numbers 1 to 5
@@ -12,7 +13,6 @@
   - [X] Generate 3 unique numbers
 
 ### Day02
-
   - [x] improvement ex Generate 3 unique numbers
   - [x] algorithmic theory
 
@@ -27,6 +27,8 @@
   - [x] Sum the elements of an array of lists
 
 ### Recursive Algorithm :
+---------------------
+
 ### Day05 
   - [x] Theory
   - [x] Calculating factorial
