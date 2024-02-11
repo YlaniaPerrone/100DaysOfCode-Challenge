@@ -1,8 +1,8 @@
 # Participation [#100DaysOfCode Challenge](https://www.100daysofcode.com/)
 
-> ### Exercices basics :
-
-> ### Day01 
+### Exercices basics :
+====================
+### Day01 
   - [x] Display squares of numbers from 1 to 10
   - [x] Display multiples of 5 up to 50
   - [x] Display cubes of numbers 1 to 5
