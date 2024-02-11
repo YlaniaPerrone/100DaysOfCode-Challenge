@@ -1,6 +1,7 @@
 # Participation [#100DaysOfCode Challenge](https://www.100daysofcode.com/)
 
-### Day01 : Exercices basics
+## Exercices basics :
+### Day01 
 
   - [x] Display squares of numbers from 1 to 10
   - [x] Display multiples of 5 up to 50
@@ -25,7 +26,8 @@
   - [x] Reverse a word
   - [x] Sum the elements of an array of lists
 
-### Day05 : Recursive Algorithm
+## Recursive Algorithm :
+### Day05 
   - [x] Theory
   - [x] Calculating factorial
   - [x] Generation of a sequence of numbers according to the Fibonacci
@@ -38,4 +40,3 @@
 
 
 
-Calculating the sum of numbers of a number
