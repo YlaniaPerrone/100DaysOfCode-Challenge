@@ -1,6 +1,6 @@
 # Participation [#100DaysOfCode Challenge](https://www.100daysofcode.com/)
 
-### Exercices basics :
+### Exercises basics :
 ### Day01 
   - [x] Display squares of numbers from 1 to 10
   - [x] Display multiples of 5 up to 50
@@ -32,13 +32,15 @@
   - [x] Calculating the sum of an array
   - [x] Calculating the sum of the digits of a number
 
+### Exercises  Array :
 ### Day06
   - [x] Calculate the average
   - [x] Incrementing Each Element of an Array
-  - [] Performing Arithmetic Operations on Each Element of an Array (additionner les 2 premieres item, puis / 1,et finir par multiplier)
-  - [] 
-  - [] 
+  - [x] Performing Arithmetic Operations on Each Element of an Array (add element in array 1, then * item in array 2, and divide results by sum array3 )
 
-
+### Day07
+  - [x] Data calculations
+  - [x] Random number generation and division based on their parity and divide by random number
+  - [x] Sum of the diagonals of a matrix
 
 
