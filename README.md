@@ -43,4 +43,13 @@
   - [x] Random number generation and division based on their parity and divide by random number
   - [x] Sum of the diagonals of a matrix
 
+### Day08
+  - [x] Quiz
+  - [x] Hangman
 
+### Search & Sort Algorithm :
+### Day09
+  - [x] Theory
+  - [x] Finding an item in a sorted table with Binary Search
+  - [x] Searches for the largest element of a given number
+  - [x] Search for the insertion position
