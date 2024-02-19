@@ -30,71 +30,48 @@ function replaceCharacter($word, $letter, $positions)
     return $word;
 }
 
+function colorize($text, $colorCode) {
+    return "\033[" . $colorCode . "m" . $text . "\033[0m";
+}
 
 function playGame($array, $symbol): void
 {
-    $guessChar = [];
+    echo colorize("\n----- Welcome to Hangman -----\n", "0;34");
+
+//    $guessChar = [];
     $wrongChar = [];
     $chance = 6;
 
-    echo "you have  $chance chance \n";
-    echo $word = getRandomWord($array);
+    $word = getRandomWord($array);
     $letterHidden = replaceChar($word, $symbol);
 //    echo $letterHidden;
 
     while ($chance > 0 && $letterHidden != $word) {
-        echo  implode(", ", $guessChar) . "\n";
-        echo $letterHidden . "\n";
-        $letterToCheck = trim(readline('Enter a character : ' . "\n"));
+        echo colorize("\nwrongs letter : [ " . implode(', ', $wrongChar) ." ]\n", "0;93");
+        echo colorize("you have : $chance chances \n\n", "0;35");
+        echo colorize("$letterHidden \n\n", "0;36");
+
+//        echo "\nwrongs letter : [ " . implode(', ', $wrongChar) ." ]\n";
+//        echo "you have : $chance chances \n\n" ;n
+//        echo $letterHidden . "\n\n";
+        $letterToCheck = trim(readline('Enter a character : ' ));
 
         $convertToArray = str_split($word);
         $arrayLetterHidden = str_split($letterHidden);
-
 
         if (isCharacterIsInWord($letterToCheck, $convertToArray)) {
             $position = getPositionCharacter($convertToArray, $letterToCheck);
             $replace = replaceCharacter($arrayLetterHidden, $letterToCheck, $position);
             $letterHidden = implode($replace);
-            $guessChar[] = $letterToCheck;
-
         } else {
-            $wrongChar[] = $letterToCheck;
+            if (!in_array($letterToCheck, $wrongChar))
+            {
+                $wrongChar[] = $letterToCheck;
+            }
             $chance--;
         }
-
     }
-
-
+    echo $letterHidden === $word ? 'Bingo, you win !!!' : 'You loose';
 }
 
 playGame($array, $symbol);
-//
-//$word = getRandomWord($array);
-//echo $word . "\n";
-//
-//$lengthWord = strlen($word);
-//
-//$letterHidden = replaceChar($symbol, count($word));
-//
-//
-//$find = 'e';
-//$convertToArray = str_split($word);
-//
-//$position = getPositionCharacter($convertToArray, $find);
-////print_r($position);
-//
-//$replace = replaceCharacterIfFound($letterHidden, $find, $position);
-//print_r($replace);
-//
-//$position = getPositionCharacter($convertToArray, $find);
-//print_r($position);
-//
-//$replace = replaceCharacterIfFound($letterHidden, $find, $position);
-//print_r($replace);
-
-
-//do{
-//    $letter = readline('Enter an character');
-//
-//}while(in_array($letterHidden, $symbol ));
-
